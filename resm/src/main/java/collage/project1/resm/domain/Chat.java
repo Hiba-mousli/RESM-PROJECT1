@@ -18,6 +18,6 @@ public class Chat {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     Long chatId;
     @ManyToOne(fetch = FetchType.LAZY,optional = false)
-    @JoinColumn(name = "userInfoID" , nullable = false)
-    private UserInfo userInfo;
+    @JoinColumn(name = "userID" , nullable = false)
+    private User user;
 }

@@ -19,7 +19,13 @@ public class User {
     Long userId;
     String username;
     String hashedPassword;
+    String firstName;
+    String lastName;
+    String phoneNumber;
     @ManyToOne(fetch = FetchType.LAZY,optional = false)
-    @JoinColumn(name = "permissionID" , nullable = false)
-    private Permission permission;
+    @JoinColumn(name = "roleID" , nullable = false)
+    private Role role;
+    @ManyToOne(fetch = FetchType.LAZY,optional = false)
+    @JoinColumn(name = "addressID" , nullable = false)
+    private Address address;
 }

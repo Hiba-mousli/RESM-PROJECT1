@@ -19,8 +19,8 @@ public class Tag {
     Long tagId;
     @ManyToOne(fetch = FetchType.LAZY,optional = false)
     @JoinColumn(name = "taggerUserinfoID" , nullable = false)
-    private UserInfo taggerUserinfo;
+    private User taggerUserinfo;
     @ManyToOne(fetch = FetchType.LAZY,optional = false)
     @JoinColumn(name = "taggedUserinfoID" , nullable = false)
-    private UserInfo taggedUserinfo;
+    private User taggedUserinfo;
 }

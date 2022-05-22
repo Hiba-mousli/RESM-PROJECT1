@@ -11,7 +11,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity @Table(name  = "permissions") @Data @NoArgsConstructor @AllArgsConstructor
-public class Permission {
+public class Role {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private long permissionId;
     private String permissionTitle;

@@ -22,6 +22,6 @@ public class Notification {
     @JoinColumn(name = "notificationTypeID" , nullable = false)
     private NotificationType notificationType;
     @ManyToOne(fetch = FetchType.LAZY,optional = false)
-    @JoinColumn(name = "userInfoID" , nullable = false)
-    private UserInfo userInfo;
+    @JoinColumn(name = "userID" , nullable = false)
+    private User user;
 }

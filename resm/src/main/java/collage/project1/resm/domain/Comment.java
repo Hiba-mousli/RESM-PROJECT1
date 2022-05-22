@@ -24,4 +24,7 @@ public class Comment {
     @ManyToOne(fetch = FetchType.LAZY,optional = false)
     @JoinColumn(name = "propertyID" , nullable = false)
     private Property property;
+    @ManyToOne(fetch = FetchType.LAZY,optional = false)
+    @JoinColumn(name = "userID" , nullable = false)
+    private User user;
 }

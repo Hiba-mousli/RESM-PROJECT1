@@ -23,6 +23,9 @@ public class ChatMessage {
     String message;
     Date dateSent;
     @ManyToOne(fetch = FetchType.LAZY,optional = false)
-    @JoinColumn(name = "userInfoID" , nullable = false)
-    private UserInfo userInfo;
+    @JoinColumn(name = "userID" , nullable = false)
+    private User user;
+    @ManyToOne(fetch = FetchType.LAZY,optional = false)
+    @JoinColumn(name = "chatID" , nullable = false)
+    private Chat chat;
 }
