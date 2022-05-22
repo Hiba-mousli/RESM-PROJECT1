@@ -8,9 +8,11 @@ import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Entity @Table(name = "propertiesStatus") @Data @NoArgsConstructor @AllArgsConstructor
+@Entity @Table(name = "propertiesStatus") @Data @NoArgsConstructor @AllArgsConstructor @Setter @Getter
 public class PropertyStatus {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     Long propertyStatusId;

@@ -11,9 +11,11 @@ import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Entity @Table(name = "notifications") @Data @NoArgsConstructor @AllArgsConstructor
+@Entity @Table(name = "notifications") @Data @NoArgsConstructor @AllArgsConstructor @Setter @Getter
 public class Notification {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     Long notificationId;

@@ -14,9 +14,11 @@ import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Entity @Table(name = "chatsMessage") @Data @NoArgsConstructor @AllArgsConstructor
+@Entity @Table(name = "chatsMessage") @Data @NoArgsConstructor @AllArgsConstructor @Setter @Getter
 public class ChatMessage {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     Long chatMessageId;

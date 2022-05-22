@@ -11,9 +11,11 @@ import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Entity @Table(name = "tagsComment") @Data @NoArgsConstructor @AllArgsConstructor
+@Entity @Table(name = "tagsComment") @Data @NoArgsConstructor @AllArgsConstructor @Setter @Getter
 public class TagComment {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     Long tagComment;
